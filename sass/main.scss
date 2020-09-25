@@ -1,5 +1,11 @@
-$color: green;
+@import './utils/variables';
+@import './base/normalize';
+@import './components/page-header';
+@import './components/logo';
+@import './components/nav';
+@import './components/page-header-contacts';
+@import './components/icons';
 
-body {
-    background-color: $color;
-}
+
+
+

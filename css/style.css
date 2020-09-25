@@ -1,7 +1,5 @@
 
-.html {
-    
-}
+
 *.
 *::before,
 *::after {
@@ -278,7 +276,7 @@ color: var(--text-color);
     user-select: none;
 }
 
-}
+
 /* .modal-icon {
     display: inline-block;
     width: 16px;
@@ -296,7 +294,7 @@ color: var(--text-color);
     border-color: transparent; */
     /* transition: background-color var(--transition),
     border-color var(--transition); */
-}
+/* } */
 
 .modal-label .accept-text {
     font-size: 14px;
@@ -779,14 +777,12 @@ padding-top: 30px;
 
 .worklist {
     position: relative;
-    /* width: 370px; */
     width: calc((100% - 30px * 2) / 3);
     margin: 15px;
     outline: 1px solid var(--border-color)
     text-decoration: none;
     box-shadow: none;
     transition: box-shadow var(--transition);
-    /* margin-right: 30px; */
 }
 
 .worklist:nth-child(3n + 1) {
