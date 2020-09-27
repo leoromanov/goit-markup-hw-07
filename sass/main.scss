@@ -1,77 +1,42 @@
-@import './utils/_variables';
+@import './utils/variables';
 
-@import './utils/_fonts';
+@import './base/normalize';
 
-@import './utils/_utils';
+@import './components/logo';
 
-@import './components/_page-header';
+@import './base/fonts';
 
-@import './components/_logo';
+@import './base/utils';
 
-@import './components/_btn';
+@import './utils/mixins';
 
-@import './components/_footer';
 
-@import './components/_hero';
 
-@import './components/_modal';
+@import './components/btn';
 
-@import './section/_advatnages';
+@import './components/icon';
 
-@import './section/_working';
+@import './components/network';
 
-@import './section/_team';
+@import './components/modal';
 
-@import './section/_clients';
+@import './components/form';
 
-@import './section/_portfolio';
+@import './layouts/page-header';
 
-.modal__checkbox {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    
-}
+@import './layouts/hero';
 
-.modal__checkbox-label {
-    width: 423px;
-    height: 24px;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: $text-color;
-    user-select: none;
-}
+@import './layouts/section/advatnages';
 
-.modal__checkbox-label::after {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    left: 11px;
-    transform: translateY(-50%);
-    display: block;
-    width: 16px;
-    height: 15px;
-    border: 2px solid var( --link-color);
-    border-radius: 2px;   
-}
+@import './layouts/section/working';
 
-.modal__checkbox:checked + .modal__checkbox-label::after {
-    background-color: $accent-color;
-    background-image: url('../images/custom_check.svg');
-    background-size: contain;
-    background-origin: border-box ;
-    border-color: transparent;
-}
+@import './layouts/section/team';
 
-.modal__accept {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 10px;
-    
-}
+@import './layouts/section/clients';
 
-.link--policy {
-    color: $accent-color;
-}
+@import './layouts/section/portfolio';
+
+@import './layouts/footer';
+
+
+

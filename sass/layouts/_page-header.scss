@@ -7,10 +7,16 @@
     border-color: var(--heading-color) */
 }
 
-.page-header.portfolio {
+.page-header-portfolio {
+    display: flex;
     color: $black-color;
     border-bottom: 2px solid $border-color;
 }
+
+// .page-header.portfolio {
+//     color: $black-color;
+//     border-bottom: 2px solid $border-color;
+// }
 
 .main-nav { display: flex;
     align-items: center;
@@ -35,20 +41,28 @@
     padding-bottom: 32px; 
     list-style: none;
     color: $text-color;
-}
-.site-nav__list:last-child {
-    margin: 0px;
+
+    &:last-child {
+        margin: 0px;
+    }
 }
 
 .site-nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
     color: $text-color;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: $bold;
+    font-size: $common-text;
     text-decoration: none;
     transition: color $transition;
 }
+
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-nav__link.current
+    {
+        color: $accent-color
+    }
 
 .current {
     color: $accent-color;
@@ -66,14 +80,7 @@
     border-radius: 2px;
 }
 
-.site-nav__link:hover,
-.site-nav__link:focus,
-.site-nav__link.current,
-.cont-nav__item:hover,
-.cont-nav__item:focus 
-{
-    color: $accent-color
-}
+
 
 .cont-nav {
     display: flex;
@@ -83,9 +90,8 @@
     margin-left: auto;
     list-style: none;
 }
-/* .cont-nav .list + .list {
-    margin-left: 50px;
-} */
+
+
 
 .cont-nav__list:last-child {
     margin-left: 30px;
@@ -94,10 +100,19 @@
 .cont-nav__item {
     padding: 32px 0px;
     color: $text-color;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: $bold;
+    font-size: $common-text;
     text-decoration: none;
     transition: color $transition;
+
+    &:hover .cont-icon { 
+        fill: currentColor;
+    }
+    &:hover,
+    &:focus 
+    {
+        color: $accent-color
+    }
 }
 
 .cont-nav__icon {
@@ -108,19 +123,8 @@
     margin-right: 10px;
 }
 
-.cont-nav__item:hover .cont-icon { 
-    fill: currentColor;
-}
 
 
-/* .cont-nav .list::before {
-    content: "";
-    width: 16px;
-    height: 12px; */
-    /* display: inline-block; */
-    /* background-size: auto auto;
-    background-repeat: no-repeat; */
-    /* background-position: right 100px bottom 25px; */
 
 
 /* .cont-nav .list:nth-child(1) {
@@ -140,26 +144,3 @@
     text-decoration: none;
 } */
 /* .span { color: $black-color;} */
-
-
-
-
-
-
-/* .site-nav .list {
-    
-} */
-/* .contacts { 
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: $text-color;
-    font-weight: 500;
-    font-size: 14px;
-    text-decoration: none;
-} */
-
-/* .header-contacts:hover,
-.header-contacts:focus {
-    color: $accent-color;
-} */
