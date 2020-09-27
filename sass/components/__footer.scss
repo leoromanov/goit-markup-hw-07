@@ -1,0 +1,132 @@
+.footer { 
+    background: $footer-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+.footer__container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
+}
+
+.footer-logo { 
+    display: block;
+    margin-bottom: 20px;
+    color: $accent-color; 
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 0.03em;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.footer__contacts {
+    margin-right: 70px;
+}
+.footer-address { 
+    color: $primary-bg-color;
+    font-style: normal;
+    margin-bottom: 9px;
+}
+
+.footer-join { 
+    color: $primary-bg-color;
+    width: 206px;
+    margin-right: 93px;
+}
+
+.footer-join__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color $transition;
+    }
+
+.footer-join__link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-join__link:hover {
+    background-color: $accent-color;
+}
+
+.footer-join__icon {
+    fill: $primary-bg-color;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.footer__contacts {
+    display: inline-block;
+    width: 231px;
+    height: 21px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
+    transition: color $transition;
+    
+}
+.footer__contacts:last-child {
+    margin: 0;
+}
+
+.footer__contacts:hover,
+.footer__contacts:focus {
+    color: $accent-color;
+}
+
+.footer-join__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-bg-color;
+}
+
+.footer-form__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color: $primary-bg-color;
+    margin-top: 20px;
+    margin-right: 12px;
+    padding-left: 16px;
+}
+.footer-form__input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+   color: rgba(255, 255, 255, 0.6);
+
+}

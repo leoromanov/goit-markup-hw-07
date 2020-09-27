@@ -1,7 +1,0 @@
-
-$icons: "facebook", "instagram", "linkedin", "twitter";
-
-@each $iconName in $icons {
-    .icon-#{$iconName}.svg
-    background-image: url(../images/#{$iconName}.svg);
-}

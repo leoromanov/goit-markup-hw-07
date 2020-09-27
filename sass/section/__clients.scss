@@ -1,0 +1,33 @@
+.clients__list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.clients__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $network-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border $transition;
+}
+
+.clients__icon {
+    /* width: 88px; */
+    fill: $network-color;
+    transition: fill $transition;
+}
+
+.clients__item:hover,
+.clients__item:focus {
+    border: 1px solid $accent-color
+}
+
+.clients__item:hover .clients__icon {
+    fill: $accent-color;
+}
