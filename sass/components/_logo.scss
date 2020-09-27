@@ -5,7 +5,7 @@
     padding-bottom: 32px;
     color: $accent-color; 
     text-decoration: none;
-    font-family: Raleway, sans-serif;
+    font-family: $logo-font;
     letter-spacing: 0.03em;
     font-weight: $bold;
     font-size: $logo-text;
@@ -16,7 +16,7 @@
     margin-bottom: 20px;
     color: $accent-color; 
     text-decoration: none;
-    font-family: Raleway, sans-serif;
+    font-family: $logo-font;
     letter-spacing: 0.03em;
     font-weight: $bold;
     font-size: $logo-text;
